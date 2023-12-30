@@ -60,7 +60,10 @@ const HeroBanner = () => {
 
       <ContentWrapper>
         <div className="heroBannerContent">
-          <span className="title">Wellcome</span>
+          <span className="title">
+            {/* <div className="welcome">Wellcome</div> */}
+            Rahul-Dev<sup style={{ color: "green" }}>24</sup>
+          </span>
           <span className="subTitle">
             The bride gets the THRILLS, the father gets the BILLS.
           </span>

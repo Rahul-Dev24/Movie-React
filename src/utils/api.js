@@ -6,6 +6,7 @@ const BASE_URL = "https://api.themoviedb.org/3";
 // const TMDB_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMzJiZGVjNjc4NDA0MzUyZWU2N2E4NzY0M2E3NTA5NSIsInN1YiI6IjY1ODdmMDUxZTI5NWI0NzEyZDU4MmI2MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.oiVS-3y52ngOQd_9iuyRpCxQyfNpTED5-_PGjMvtmsM"
 // const TMDB_TOKEN = import.meta.env.VITE_APP_TMDB_TOKEN;
 const TMDB_API_Key = import.meta.env.VITE_APP_TMDB_KEY;
+const API = "f32bdec678404352ee67a87643a75095";
 
 
 // const headers = {
@@ -23,7 +24,7 @@ export const fetchDataFromApi = async (url,params) =>{
     //     }
     // }
     try {
-        const {data} = await axios.get(BASE_URL+url+`${url.includes("?")?"&":"?"}`+"api_key="+TMDB_API_Key,{
+        const {data} = await axios.get(BASE_URL+url+`${url.includes("?")?"&":"?"}`+"api_key="+TMDB_API_Key || API,{
             Autorization:"bearer "+ TMDB_API_Key,
             params : params,
             accept: 'application/json()'

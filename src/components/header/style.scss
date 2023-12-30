@@ -30,7 +30,22 @@
   .logo {
     cursor: pointer;
     img {
-      height: 50px;
+      height: 180px;
+      object-fit: cover;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .logo {
+      cursor: pointer;
+      img {
+        height: 140px;
+        object-fit: cover;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
     }
   }
 
@@ -108,6 +123,7 @@
     width: 100%;
     height: 60px;
     background-color: white;
+    border-radius: 30px;
     position: absolute;
     top: 60px;
     animation: mobileMenu 0.3s ease forwards;

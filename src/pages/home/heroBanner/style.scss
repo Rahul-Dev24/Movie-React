@@ -49,18 +49,26 @@
     max-width: 800px;
     margin: 0 auto;
     .title {
-      font-size: 50px;
-      font-weight: 700;
-      margin-bottom: 10px;
+      font-size: 25px;
+      font-weight: 600;
+      padding-bottom: 15px;
+      color: rgb(255, 136, 0);
       @include md {
         margin-bottom: 0%;
         font-size: 90px;
       }
     }
+    // .welcome {
+    //   font-size: 40px;
+    //   font-weight: 600;
+    //   margin-bottom: 10px;
+    //   color: #fff;
+    // }
     .subTitle {
       font-size: 18px;
       font-weight: 500;
       margin-bottom: 40px;
+      color: aquamarine;
       @include md {
         font-size: 24px;
       }
